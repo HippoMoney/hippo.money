@@ -1,2 +1,2 @@
-npm run build
-npm run prod-start
+worker: npm run build
+worker: npm run prod-start
