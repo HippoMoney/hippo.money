@@ -1,2 +1,1 @@
-worker: npm run build
-worker: npm run prod-start
+web: npm run prod-start

@@ -58,7 +58,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "prod-start": "pm2 start index.js --attach"
+    "prod-start": "npm run build && pm2 start index.js --attach"
   },
   "jest": {
     "collectCoverageFrom": ["src/**/*.{js,jsx}"],
