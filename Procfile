@@ -1,1 +1,2 @@
-npm run prod-build
+npm run build
+npm run prod-start
