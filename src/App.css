@@ -1,0 +1,190 @@
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  height: 100vh;
+}
+
+#large-header {
+  background-image: url('background.jpg');
+}
+
+.large-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.large-footer {
+  display: flex;
+  height: 100vh;
+}
+
+.title-text {
+  font-weight: 200;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+.main-list {
+  color: #f9f1e9;
+}
+
+.main-list > li {
+  padding: 5px;
+}
+
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+}
+
+.main-title .thin {
+  font-weight: 100;
+}
+
+.particles-js-canvas-el {
+  height: 100vh !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}
+
+@-webkit-keyframes polygon {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+@keyframes polygon {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+polygon {
+  stroke-width: 1;
+  fill: transparent;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+.hex1 {
+  animation: 40s polygon forwards;
+  -webkit-animation: 40s polygon forwards;
+}
+.hex2 {
+  animation: 80s polygon forwards;
+  -webkit-animation: 80s polygon forwards;
+}
+.hex3 {
+  animation: 120s polygon alternate backwards;
+  -webkit-animation: 120s polygon alternate backwards;
+}
+.hex4 {
+  animation: 100s polygon alternate backwards;
+  -webkit-animation: 100s polygon alternate backwards;
+}
+circle {
+  fill: #fff;
+  -webkit-animation-name: circle-glow;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+
+  animation-name: circle-glow;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes circle-glow {
+  0% {
+    fill: hsla(209, 20%, 32%, 1);
+  }
+  50% {
+    fill: hsla(209, 20%, 49%, 1);
+  }
+  100% {
+    fill: hsla(360, 100%, 100%, 1);
+  }
+}
+
+@keyframes circle-glow {
+  0% {
+    fill: hsla(209, 20%, 32%, 1);
+  }
+  50% {
+    fill: hsla(209, 20%, 49%, 1);
+  }
+  100% {
+    fill: hsla(360, 100%, 100%, 1);
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: Entypo;
+  font-size: 35px;
+  text-align: center;
+  color: #bbb;
+  border-radius: 50%;
+  background: #eee;
+  overflow: hidden;
+  transition: color .3s;
+}
+
+.social:hover {
+  color: #59d;
+  cursor: pointer;
+}
+
+.social {
+  box-shadow: rgb(210, 210, 210) 1px 1px, rgb(210, 210, 210) 2px 2px, rgb(211, 211, 211) 3px 3px,
+    rgb(211, 211, 211) 4px 4px, rgb(211, 211, 211) 5px 5px, rgb(212, 212, 212) 6px 6px,
+    rgb(212, 212, 212) 7px 7px, rgb(212, 212, 212) 8px 8px, rgb(213, 213, 213) 9px 9px,
+    rgb(213, 213, 213) 10px 10px, rgb(214, 214, 214) 11px 11px, rgb(214, 214, 214) 12px 12px,
+    rgb(214, 214, 214) 13px 13px, rgb(215, 215, 215) 14px 14px, rgb(215, 215, 215) 15px 15px,
+    rgb(215, 215, 215) 16px 16px, rgb(216, 216, 216) 17px 17px, rgb(216, 216, 216) 18px 18px,
+    rgb(216, 216, 216) 19px 19px, rgb(217, 217, 217) 20px 20px, rgb(217, 217, 217) 21px 21px,
+    rgb(218, 218, 218) 22px 22px, rgb(218, 218, 218) 23px 23px, rgb(218, 218, 218) 24px 24px,
+    rgb(219, 219, 219) 25px 25px, rgb(219, 219, 219) 26px 26px, rgb(219, 219, 219) 27px 27px,
+    rgb(220, 220, 220) 28px 28px, rgb(220, 220, 220) 29px 29px, rgb(221, 221, 221) 30px 30px;
+  text-shadow: rgb(226, 226, 226) 1px 1px, rgb(227, 227, 227) 2px 2px, rgb(227, 227, 227) 3px 3px,
+    rgb(228, 228, 228) 4px 4px, rgb(229, 229, 229) 5px 5px, rgb(229, 229, 229) 6px 6px,
+    rgb(230, 230, 230) 7px 7px, rgb(230, 230, 230) 8px 8px, rgb(231, 231, 231) 9px 9px,
+    rgb(232, 232, 232) 10px 10px, rgb(232, 232, 232) 11px 11px, rgb(233, 233, 233) 12px 12px,
+    rgb(233, 233, 233) 13px 13px, rgb(234, 234, 234) 14px 14px, rgb(235, 235, 235) 15px 15px,
+    rgb(235, 235, 235) 16px 16px, rgb(236, 236, 236) 17px 17px, rgb(236, 236, 236) 18px 18px,
+    rgb(237, 237, 237) 19px 19px, rgb(238, 238, 238) 20px 20px;
+}
