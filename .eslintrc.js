@@ -1,6 +1,6 @@
 module.exports = {
   extends: 'airbnb',
-  plugins: ['react', 'jsx-a11y', 'import'],
+  plugins: ['react', 'eslint-plugin-jsx-a11y', 'import'],
   globals: {
     window: true,
     document: true,
