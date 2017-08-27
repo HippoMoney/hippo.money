@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react';
 
 const SocialIcons = ({ link, svg }) =>
   (<a
-    target="_self"
+    target="_blank"
+    rel="noopener noreferrer"
     href={link}
     className="grommetux-anchor grommetux-anchor--animate-icon grommetux-anchor--icon"
   >
