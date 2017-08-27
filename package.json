@@ -55,7 +55,7 @@
   },
   "scripts": {
     "preinstall": "npm install pm2 -g",
-    "start": "node scripts/start.js",
+    "dev-start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "prod-start": "pm2 start index.js --attach"
